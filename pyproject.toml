@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "translator-app"
+version = "0.1.0"
+description = "This is a simple translator app made with python"
+authors = ["IBK <ibukunoluwa.adetoba@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+translate = "^3.6.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+pylint = "^3.2.6"
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
