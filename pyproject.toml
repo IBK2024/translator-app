@@ -21,9 +21,9 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
 strict = true
-exclude = ["^typings/.*$"]
 
 [tool.pylint.MASTER]
+ignore-paths = ["^typings/.*$"]
 disable = ["C0114", "C0301"]
 
 [tool.black]
