@@ -6,7 +6,7 @@ while True:
         text = input("Enter the text you want to translate: ")
 
         translator = Translator(to_lang=lang)
-        translation = translator.translate(text)
+        translation: str = str(translator.translate(text))  # type: ignore
         print(translation)
     except KeyboardInterrupt:
         break
