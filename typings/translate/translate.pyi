@@ -7,16 +7,12 @@ from .providers import MyMemoryProvider
 DEFAULT_PROVIDER = MyMemoryProvider
 TRANSLATION_API_MAX_LENGHT = ...
 PROVIDERS_CLASS = ...
-
 class Translator:
-    def __init__(
-        self,
-        to_lang,
-        from_lang=...,
-        provider=...,
-        secret_access_key=...,
-        region=...,
-        **kwargs
-    ) -> None: ...
-    def translate(self, text):  # -> LiteralString:
+    def __init__(self, to_lang, from_lang=..., provider=..., secret_access_key=..., region=..., **kwargs) -> None:
         ...
+    
+    def translate(self, text): # -> LiteralString:
+        ...
+    
+
+
